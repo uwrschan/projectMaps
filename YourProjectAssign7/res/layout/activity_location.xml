@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundlocation"
+    android:scrollbars="vertical"
+    android:isScrollContainer="true" >
+
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_margin" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="@dimen/seperator"
+            android:text="@string/title_location"
+            android:textColor="@color/heading1"
+            android:textSize="@dimen/heading1" />
+
+        <!-- here goes the fragment -->
+        <!--
+        <fragment
+            android:id="@+id/fragment_map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        -->
+
+        <fragment
+            android:id="@+id/fragment_map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--This only runs on Android 4.0 and higher -->
+		<!--  I made my own new fragment in here it works 
+		but is really small but i don't know how you want to design it so i leave it like that
+		it works now in my phone  i put it in a new project so you have to assign the libary again and change you Api key again 
+		( you can use the old one it has the same packets name com.example.lecture13 hope it works questions email me  -->
+
+        <!--
+	    <ImageView
+    	    android:id="@+id/imgview_pho"
+    	    android:src="@drawable/main_search_image"
+    	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:contentDescription="@string/rating_imgview_desc" />
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/main_search_star_small"
+            android:paddingBottom="@dimen/seperator"
+            android:text="@string/tv_rating_search"
+            android:textColor="@color/heading1"
+            android:textSize="@dimen/heading1" />
+
+        <EditText
+            android:id="@+id/edittext_rating_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/main_search_image_small"
+            android:paddingBottom="@dimen/seperator"
+            android:text="@string/tv_variety_search"
+            android:textColor="@color/heading1"
+            android:textSize="@dimen/heading1" />
+
+        <EditText
+            android:id="@+id/edittext_variety_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/Button_Location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/seperator"
+            android:text="@string/btn_location_to_login" />
+        
+    </LinearLayout>
+
+</ScrollView>

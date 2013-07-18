@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:background="@color/background"
+    android:layout_width="fill_parent"
+    android:isScrollContainer="true"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_margin="@dimen/activity_margin" >
+    
+    	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/title_main_search"
+	        android:textSize="@dimen/heading1"
+	        android:textColor="@color/heading1"
+	        android:paddingBottom="@dimen/seperator" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tv_rating_search"
+	        android:drawableLeft="@drawable/main_search_star_small"
+	        android:textSize="@dimen/heading1"
+	        android:textColor="@color/heading1"
+	        android:paddingBottom="@dimen/seperator" />
+	    
+	    <EditText
+		        android:id="@+id/edittext_rating_search"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="text" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tv_variety_search"
+	        android:drawableLeft="@drawable/main_search_image_small"
+	        android:textSize="@dimen/heading1"
+	        android:textColor="@color/heading1"
+	        android:paddingBottom="@dimen/seperator" />
+	    
+	    <EditText
+		        android:id="@+id/edittext_variety_search"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="text" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tv_location_search"
+	        android:drawableLeft="@drawable/main_search_globe_small"
+	        android:textSize="@dimen/heading1"
+	        android:textColor="@color/heading1"
+	        android:paddingBottom="@dimen/seperator" />
+	    
+	    <EditText
+		        android:id="@+id/edittext_location_search"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="text" />
+    	
+    	
+    	
+    		
+    			    
+	    <Button
+		    android:id="@+id/Button_main_search"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/btn_main_search_to_rating"
+		    android:paddingBottom="@dimen/seperator" />
+	    
+    </LinearLayout>
+</ScrollView>

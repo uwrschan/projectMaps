@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ <!-- general -->
+    <string name="app_name">Assign7_SaveDataMenuCameraMap</string>
+    <string name="action_settings">Settings</string>
+
+<!-- login register -->
+    <string name="title_login_register">Login Register</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register (to register)</string>
+
+<!-- register -->    
+    <string name="title_register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="city_state">City, State</string>
+    <string name="dob">Date of Birth</string>
+	<string name="btn_profile_submit">Submit (to main search)</string>
+    
+<!-- main search -->    
+    <string name="title_main_search">Main Search</string>
+    <string name="tv_rating_search">Rating Search</string>
+    <string name="tv_variety_search">Variety Search</string>
+    <string name="tv_location_search">Location Search</string>
+	<string name="btn_main_search_to_rating">Search (to ratings)</string>
+    
+<!-- rating -->
+    <string name="title_rating">Rating</string>
+	<string name="btn_rating_to_variety">Search (to variety)</string>
+	<string name="rating_imgview_desc">Picture of Pho</string>
+    
+<!-- variety -->
+    <string name="title_variety">Variety</string>
+	<string name="btn_variety_to_location">Search (to location)</string>
+    
+<!-- location -->
+    <string name="title_location">Location</string>
+	<string name="btn_location_to_login">Search (login_register)</string>
+</resources>
